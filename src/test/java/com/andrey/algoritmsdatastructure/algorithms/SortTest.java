@@ -26,7 +26,7 @@ public class SortTest {
     }
 
     @Test
-    public void InsertSort() {
+    public void insertSort() {
         List<Integer> sortedList = InsertSort.sort(list);
 
         assertEquals(expectedList, sortedList);
@@ -34,8 +34,16 @@ public class SortTest {
     }
 
     @Test
-    public void BubbleSort() {
+    public void bubbleSort() {
         List<Integer> sortedList = BubbleSort.sort(list);
+
+        assertEquals(expectedList, sortedList);
+        log.info(sortedList.toString());
+    }
+
+    @Test
+    public void quickSort() {
+        List<Integer> sortedList = QuickSort.sort(list);
 
         assertEquals(expectedList, sortedList);
         log.info(sortedList.toString());
