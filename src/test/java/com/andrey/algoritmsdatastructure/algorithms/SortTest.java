@@ -48,4 +48,12 @@ public class SortTest {
         assertEquals(expectedList, sortedList);
         log.info(sortedList.toString());
     }
+
+    @Test
+    public void mergeSort() {
+        List<Integer> sortedList = MergeSort.sort(list);
+
+        assertEquals(expectedList, sortedList);
+        log.info(sortedList.toString());
+    }
 }
